@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.ModifyConstant;
 @Mixin(Util.class)
 public class MixinUtil {
 
-    @ModifyConstant(method = "makeExecutor", constant = @Constant(intValue = 7), remap = false)
+    @ModifyConstant(method = "makeExecutor", constant = @Constant(intValue = 7, ordinal = 0))
     private static int maxThreads(int arg0) {
         return ThreadControl.MAX_THREAD_COUNT;
     }
