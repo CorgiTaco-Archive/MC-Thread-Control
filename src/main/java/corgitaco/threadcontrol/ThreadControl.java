@@ -24,7 +24,7 @@ public class ThreadControl {
     }
 
     public static int getThreadCount() {
-        File file = CONFIG_PATH.resolve("threadControl.properties").toFile();
+        File file = CONFIG_PATH.resolve("ThreadControl.properties").toFile();
 
         if (!file.exists()) {
             try {
