@@ -1,11 +1,11 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "corgitaco.modid.mixin",
+  "package": "corgitaco.threadcontrol.mixin",
   "compatibilityLevel": "JAVA_8",
-  "refmap": "modid.refmap.json",
+  "refmap": "threadcontrol.refmap.json",
   "mixins": [
-    "ExampleMixin"
+    "MixinUtil"
   ],
   "client": [
   ],

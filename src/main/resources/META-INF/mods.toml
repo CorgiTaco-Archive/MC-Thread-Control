@@ -3,17 +3,17 @@ loaderVersion = "[33,)"
 license = "LGPLv3"
 issueTrackerURL = ""
 [[mods]]
-modId = "modid"
+modId = "threadcontrol"
 version = "1.0"
-displayName = "Mod ID"
+displayName = "Thread Control"
 displayURL = ""
 logoFile = "icon.png"
 credits = ""
 authors = "Corgi Taco"
 description = '''
-Description
+Simple mod that lets you control the amount of threads MC can use for different aspects of the game including: world gen, game start up, datapack loading.
 '''
-[[dependencies.modid]]
+[[dependencies.threadcontrol]]
 modId = "forge"
 mandatory = true
 versionRange = "[33.0.0,)"
