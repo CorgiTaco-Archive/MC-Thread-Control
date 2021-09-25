@@ -11,7 +11,7 @@ logoFile = "icon.png"
 credits = ""
 authors = "Corgi Taco"
 description = '''
-Simple mod that lets you control the amount of threads MC can use for different aspects of the game including: world gen, game start up, datapack loading.
+Simple mod that lets you control the amount of logical processors MC can use for different aspects of the game including: world gen, game start up, datapack loading.
 '''
 [[dependencies.threadcontrol]]
 modId = "forge"

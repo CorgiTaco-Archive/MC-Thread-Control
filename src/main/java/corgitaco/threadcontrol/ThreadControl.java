@@ -29,7 +29,7 @@ public class ThreadControl {
         if (!file.exists()) {
             try {
                 Files.createDirectories(file.toPath().getParent());
-                Files.write(file.toPath(), "maxThreadCount=255".getBytes());
+                Files.write(file.toPath(), "maxLogicalProcessors=255".getBytes());
             } catch (IOException e) {
             }
         }
@@ -38,7 +38,7 @@ public class ThreadControl {
             p.load(reader);
 
             try {
-                String threadcount = p.getProperty("maxThreadCount");
+                String threadcount = p.getProperty("maxLogicalProcessors");
                 return Integer.parseInt(threadcount);
             } catch (NumberFormatException e) {
             }
